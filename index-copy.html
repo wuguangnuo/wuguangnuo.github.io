@@ -13,11 +13,9 @@ html,body{width:100%;height:100%;margin:0;-moz-user-select:none;-webkit-user-sel
 	<body>
 		<a href="http://www.wuguangnuo.cn/">落花人独立 微雨燕双飞</a>
 	</body>
-	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-	
 <script>
 var font=new Array("FZShuTi","Microsoft JhengHei","FZYaoti","STCaiyun","STHupo","STLiti","STXingkai","STXinwei");
-$("a").css("font-family",font[Math.floor(Math.random()*(font.length+1))]);
+document.getElementByTagName("a").style.fontFamily(font[Math.floor(Math.random()*(font.length+1))]);
 document.body.oncontextmenu=function(){return false};
 document.body.ondragstart=function(){return false};
 document.body.onkeydown=function(){var e=window.event||arguments[0];if(e.keyCode==123){return false;}else if(e.ctrlKey&&e.shiftKey&&e.keyCode==73){return false;}else if(e.shiftKey&&e.keyCode==121){return false;}};
